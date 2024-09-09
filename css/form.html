@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .my-form {
+        background-color: rgb(50, 150, 100);
+        padding: 15px;
+        width: 300px;
+        margin: 50px auto;
+        border-radius: 10px;
+      }
+      label {
+        display: block;
+        color: #1b1b1b;
+        margin-bottom: 5px;
+      }
+
+      input {
+        display: block;
+        margin-bottom: 20px;
+        width: 93%;
+        padding: 5px 10px;
+        border-radius: 30px;
+        border: 1px solid rgb(13, 63, 36);
+      }
+      input[type="password"] {
+        color: red;
+      }
+      button {
+        padding: 2px 30px;
+        border-radius: 30px;
+        border: none;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="my-form">
+      <label for="username">Username</label>
+      <input type="text" id="username" />
+      <label for="password">Password</label>
+      <input type="password" id="password" />
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>
