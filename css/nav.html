@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: rgb(20, 69, 43);
+        margin: 15px 30px;
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        display: inline-block;
+        position: relative;
+      }
+      nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 10px 30px;
+      }
+      nav ul li a:hover {
+        background-color: orangered;
+      }
+      nav ul ul {
+        display: none;
+        width: 128px;
+        background-color: brown;
+        position: absolute;
+        top: 38px;
+      }
+      nav ul li:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Services</a>
+          <ul>
+            <li><a href="#">Service 1</a></li>
+            <li><a href="#">Service 2</a></li>
+            <li><a href="#">Service 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
