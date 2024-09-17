@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      :root {
+        --primary-color: #e23232;
+      }
+
+      h1 {
+        color: var(--primary-color, red);
+      }
+      .container {
+        border: 1px solid var(--primary-color, red);
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt at
+        dolores ratione molestias distinctio rem consectetur voluptas, eveniet
+        blanditiis fugit illo, iure possimus voluptates error fuga praesentium.
+        Illo, inventore atque.
+      </p>
+    </div>
+  </body>
+</html>
