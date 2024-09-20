@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      :root {
+        --primary-color: #943242;
+      }
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        display: inline-block;
+      }
+      nav ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 15px 20px;
+        color: var(--primary-color);
+      }
+      nav ul li a:hover {
+        color: black;
+      }
+      .brand-text {
+        font-size: 32px;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: bold;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .hero-banner {
+        background-color: red;
+        background-image: url(bird.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      .hero-banner h1 {
+        font-size: 60px;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+      .hero-banner p {
+        color: var(--primary-color);
+        font-style: italic;
+      }
+
+      .row {
+        display: flex;
+      }
+      .col-25 {
+        width: 25%;
+      }
+      .col-75 {
+        width: 75%;
+      }
+      .about {
+        padding: 100px 0px;
+      }
+      .about img {
+        width: 100%;
+      }
+      .about .col-75 {
+        padding-left: 100px;
+      }
+      .about h2 {
+        text-transform: uppercase;
+        font-size: 30px;
+        letter-spacing: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      .about p {
+        line-height: 30px;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="brand-text" href="#">Brand</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero-banner">
+      <div class="container">
+        <h1>Alan Walker</h1>
+        <p>Web & Mobile App Developer</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-25">
+            <img src="cat.PNG" alt="cat" />
+          </div>
+          <div class="col-75">
+            <h2>About <span style="color: var(--primary-color)">Me</span></h2>
+            <p>
+              Hello! I'm Alan Walker. I'm a web developer, and I'm very
+              passionate and dedicated to my work. With 20 years experience as a
+              professional web developer, I have acquired the skills and
+              knowledge necessary to make your project a success. I enjoy every
+              step of the design process, from discussion and collaboration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
