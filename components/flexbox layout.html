@@ -6,7 +6,7 @@
     <title>Home</title>
     <style>
       :root {
-        --primary-color: #943242;
+        --primary-color: #e54b4b; /* #943242;*/
       }
       * {
         font-family: Arial, Helvetica, sans-serif;
@@ -70,6 +70,10 @@
 
       .row {
         display: flex;
+        gap: 30px;
+      }
+      .col {
+        flex-grow: 1;
       }
       .col-25 {
         width: 25%;
@@ -96,6 +100,73 @@
       .about p {
         line-height: 30px;
         letter-spacing: 1px;
+      }
+      .btn-primary {
+        background-color: var(--primary-color);
+        text-decoration: none;
+        color: white;
+        padding: 10px 15px;
+        display: inline-block;
+        border-radius: 4px;
+        margin-top: 15px;
+      }
+      .btn-primary:hover {
+        background-color: white;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+      }
+      .works {
+        background-color: aliceblue;
+        padding: 100px 0;
+      }
+
+      .works h2 {
+        text-transform: uppercase;
+        font-size: 30px;
+        letter-spacing: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+
+      .works p {
+        line-height: 30px;
+        letter-spacing: 1px;
+      }
+      .works .card {
+        position: relative;
+        display: flex;
+        height: 340px;
+        border-radius: 4px;
+        transition: all 0.3s;
+      }
+      .card img {
+        position: absolute;
+        height: 340px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .card .caption {
+        position: absolute;
+        background-color: aliceblue;
+        height: 100%;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 15px;
+      }
+      .card:hover img {
+        display: none;
+        transition: all 0.3s;
+      }
+      .card:hover .caption {
+        display: flex;
+        transition: all 0.3s;
+      }
+      .works .row {
+        margin: 60px 0;
+        gap: 60px;
       }
     </style>
   </head>
@@ -134,6 +205,77 @@
               knowledge necessary to make your project a success. I enjoy every
               step of the design process, from discussion and collaboration.
             </p>
+
+            <a class="btn-primary" href="#!">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works">
+      <div class="container">
+        <h2>Selected <span style="color: var(--primary-color)">Works</span></h2>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="caption">
+                <p>Video</p>
+                <h4>Sweet Fruit</h4>
+              </div>
+              <img src="cat.PNG" alt="" />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div class="caption">
+                <p>Video</p>
+                <h4>Sweet Fruit</h4>
+              </div>
+              <img src="cat.PNG" alt="" />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div class="caption">
+                <p>Video</p>
+                <h4>Sweet Fruit</h4>
+              </div>
+              <img src="cat.PNG" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="caption">
+                <p>Video</p>
+                <h4>Sweet Fruit</h4>
+              </div>
+              <img src="cat.PNG" alt="" />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div class="caption">
+                <p>Video</p>
+                <h4>Sweet Fruit</h4>
+              </div>
+              <img src="cat.PNG" alt="" />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div class="caption">
+                <p>Video</p>
+                <h4>Sweet Fruit</h4>
+              </div>
+              <img src="cat.PNG" alt="" />
+            </div>
           </div>
         </div>
       </div>
