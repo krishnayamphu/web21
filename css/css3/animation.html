@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      @keyframes changeBgColor {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: blue;
+        }
+      }
+
+      @keyframes moveBox {
+        0% {
+          transform: translate(0);
+        }
+        100% {
+          transform: translateX(800%) rotate(360deg);
+        }
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 15px;
+
+        animation-name: changeBgColor;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+      }
+
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 15px;
+
+        animation: moveBox 3s infinite alternate;
+      }
+
+      @keyframes textColor {
+        0% {
+          color: red;
+        }
+        50% {
+          color: blue;
+        }
+        100% {
+          color: green;
+          font-size: 80px;
+        }
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        animation: textColor 3s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">box</div>
+    <div class="box2"></div>
+
+    <h1>Hello World</h1>
+  </body>
+</html>
